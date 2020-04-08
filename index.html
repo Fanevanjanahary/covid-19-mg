@@ -52,17 +52,15 @@
             'id': 'covid-19-mg',
             'type': 'fill',
             'source': 'covid-19-mg',
-            'layout': {},
             "layout": {},
-			"filter": [">=", "CASES", 0],
 			"paint": {
                  "fill-color": {
                     property: 'CASES',
-                    type:  'interval',
+                    type:  'interpolate',
                     stops: [
-                        ['5', '#ffc107'],
-                        ['10', '#fd7e14'],
-                        ['20', '#dc3545'],
+                        [5, '#ffc107'],
+                        [10, '#fd7e14'],
+                        [20, '#dc3545'],
                          
                         ]
                         },
