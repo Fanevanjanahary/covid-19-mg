@@ -74,13 +74,13 @@
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML('<h1 classe="item">'+e.features[0].properties.NOM_REGION+'</h1>'+
-            '<p><span>CASES</span>'
+            '<p><span>CASES:</span>'
               +e.features[0].properties.CASES+
             '</p>'+
-            '<p><span>RECOVERED</span>'+ 
+            '<p><span>RECOVERED:</span>'+ 
               +e.features[0].properties.RECOVERED+
             '</p>'+
-            '<p><span>DECEASED</span>'+ 
+            '<p><span>DECEASED:</span>'+ 
               +e.features[0].properties.DECEASED+
             '</p>'
             )
@@ -92,14 +92,10 @@
   .mapboxgl-popup-content h1 {
   background: #fff;
   color: #4a4d4b;
-  margin: 0;
   display: block;
-  padding: 8px;
-  border-radius: 3px 3px 0 0;
   font-weight: 600;
-  margin-top: -15px;
   font-size: 12px;
-  width: 150px; 
+  width: 250px; 
   text-align: center
 
 }
@@ -107,19 +103,14 @@
 .mapboxgl-popup-content p span {
   background: #fff;
   color: #4a4d4b;
-  margin: 0;
-  display: block;
+  margin-right: 10px;
   font-weight: 600;
-  margin-top: -15px;
 }
 
 
 .mapboxgl-popup-content p {
   margin: 0;
-  color: #4a4d4b;
-  display: block;
-  padding: 8px;
-  border-radius: 3px 3px 0 0;
+  color: #7c827e;
   font-weight: 600;
   margin-top: 10px;
   font-size: 13px;
