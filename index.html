@@ -89,14 +89,18 @@
 </script>
 
 <style>
-  .mapboxgl-popup-content h1 {
+.mapboxgl-popup-content {
+    pointer-events: auto;
+    width: 150px;
+    padding-left: 50px;
+}
+
+.mapboxgl-popup-content h1 {
   background: #fff;
   color: #4a4d4b;
   display: block;
   font-weight: 600;
-  font-size: 12px;
-  width: 250px; 
-  text-align: center
+  font-size: 15px;
 
 }
 
@@ -113,9 +117,7 @@
   color: #7c827e;
   font-weight: 600;
   margin-top: 10px;
-  font-size: 13px;
-  width: 150px; 
-  text-align: center
+  font-size: 12px;
 
 }
 </style>
