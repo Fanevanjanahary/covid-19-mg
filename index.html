@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Covid-19 MG</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+<script language="JavaScript"  src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.11.1.js"></script>
+<style>
+	body { margin: 0; padding: 0; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+
+    var covid_mg
+    // load geojson data
+    $.getJSON("data/data.geojson", function(json){
+        covid_mg = json;
+	});
+
+    
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZmFuZXZhIiwiYSI6ImNrN3g4eHlrazAxM2wzZnAyM2R1c3pkeXcifQ.KNBXjd2pMq3C8gF6QmmcYA';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [46.307, -17.958],
+        zoom: 6
+    });
+
+    map.addControl(new mapboxgl.NavigationControl({
+		showCompass: false
+		}), 'top-right'
+	);
+
+	map.addControl(new mapboxgl.GeolocateControl({
+		positionOptions: {
+			enableHighAccuracy: true
+		},
+		trackUserLocation: true
+	}));
+
+    map.on('load', function() {
+        map.addSource("covid-19-mg", {
+				"type": "geojson",
+				"data": covid_mg
+			});
+        map.addLayer({
+            'id': 'covid-19-mg',
+            'type': 'fill',
+            'source': 'covid-19-mg',
+            'layout': {},
+            "layout": {},
+			"filter": [">=", "CASES", 0],
+			"paint": {
+                 "fill-color": {
+                    property: 'CASES',
+                    type:  'interval',
+                    stops: [
+                        ['5', '#ffc107'],
+                        ['10', '#fd7e14'],
+                        ['20', '#dc3545'],
+                         
+                        ]
+                        },
+                    'fill-opacity': 0.50
+                    }
+        });
+    });
+</script>
+
+</body>
+</html>
