@@ -59,9 +59,9 @@
                     type:  'interval',
                     stops: [
                         [0, '#FFFFFF'],
-                        [5, '#ffc107'],
-                        [10, '#fd7e14'],
-                        [20, '#dc3545'],
+                        [1, '#ffc107'],
+                        [6, '#fd7e14'],
+                        [10, '#dc3545'],
                          
                         ]
                         },
@@ -87,6 +87,47 @@
         .addTo(map);
      });
 </script>
+
+<style>
+  .mapboxgl-popup-content h1 {
+  background: #fff;
+  color: #4a4d4b;
+  margin: 0;
+  display: block;
+  padding: 8px;
+  border-radius: 3px 3px 0 0;
+  font-weight: 600;
+  margin-top: -15px;
+  font-size: 12px;
+  width: 150px; 
+  text-align: center
+
+}
+
+.mapboxgl-popup-content p span {
+  background: #fff;
+  color: #4a4d4b;
+  margin: 0;
+  display: block;
+  font-weight: 600;
+  margin-top: -15px;
+}
+
+
+.mapboxgl-popup-content p {
+  margin: 0;
+  color: #4a4d4b;
+  display: block;
+  padding: 8px;
+  border-radius: 3px 3px 0 0;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 13px;
+  width: 150px; 
+  text-align: center
+
+}
+</style>
 
 </body>
 </html>
