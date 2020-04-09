@@ -50,23 +50,18 @@
 			});
         map.addLayer({
             'id': 'covid-19-mg',
-            'type': 'fill',
+            'type': 'circle',
             'source': 'covid-19-mg',
-            "layout": {},
-			"paint": {
-                 "fill-color": {
-                    property: 'CASES',
-                    type:  'interval',
-                    stops: [
-                        [0, '#FFFFFF'],
-                        [1, '#ffc107'],
-                        [6, '#fd7e14'],
-                        [10, '#dc3545'],
-                         
-                        ]
-                        },
-                    'fill-opacity': 0.5
-                    }
+            'layout': {},
+			      'paint': {
+              'circle-radius': [
+                'interpolate', ['linear'], ['zoom'],
+                10, ['*', ['number', ['get', 'CASES']], 15],
+                13, ['*', ['number', ['get', 'CASES']], 5],
+              ],
+              'circle-opacity': 0.8,
+              'circle-color': '#dc3545'
+            }
         });
     });
 
