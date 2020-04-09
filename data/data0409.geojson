@@ -1,0 +1,28 @@
+{
+"type": "FeatureCollection",
+"name": "data0409",
+"features": [
+{ "type": "Feature", "properties": { "CODREGION": "61", "NOM_REGION": "ANDROY", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 45.439893235135443, -24.821599861475931 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "62", "NOM_REGION": "ANOSY", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 46.257999358300566, -23.987892040259698 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "63", "NOM_REGION": "ATSIMO ANDREFANA", "CASES": 2.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 44.429430408739819, -23.05988451743989 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "64", "NOM_REGION": "MENABE", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 44.899185169125779, -20.229905256220128 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "35", "NOM_REGION": "VATOVAVY FITOVINANY", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 47.865805813547567, -21.349076463941028 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "52", "NOM_REGION": "ANALANJIROFO", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 49.36137632460337, -16.388786927218064 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "21", "NOM_REGION": "DIANA", "CASES": 1.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 48.924903720484821, -13.344032580432794 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "22", "NOM_REGION": "SAVA", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 49.82516815126418, -14.31278845135558 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "44", "NOM_REGION": "SOFIA", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 48.293803745933438, -15.344018103908832 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "42", "NOM_REGION": "BOENY", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 46.215876640084275, -16.275076996391405 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "43", "NOM_REGION": "MELAKY", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 44.809440026389872, -17.712652217720699 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "41", "NOM_REGION": "BETSIBOKA", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 46.999062793018695, -17.22705302236378 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "11", "NOM_REGION": "ANALAMANGA", "CASES": 76.0, "RECOVERED": 11.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 47.422410622264188, -18.421835665813987 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "13", "NOM_REGION": "ITASY", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 46.887450820746956, -19.050095628236569 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "12", "NOM_REGION": "BONGOLAVA", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 46.145607158836981, -18.58690567845138 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "14", "NOM_REGION": "VAKINANKARATRA", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 46.848758667283668, -19.732042133736748 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "33", "NOM_REGION": "HAUTE_MATSIATRA", "CASES": 8.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 46.600655557391782, -21.442869036000907 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "32", "NOM_REGION": "ATSIMO ATSINANANA", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 47.250815879296191, -23.295786065112107 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "31", "NOM_REGION": "AMORON'I MANIA", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 46.689055396365205, -20.493601420946543 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "51", "NOM_REGION": "ALAOTRA MANGORO", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 48.321400250132392, -17.922373164476774 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "53", "NOM_REGION": "ATSINANANA", "CASES": 6.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 48.687177840520739, -19.100567233960291 ] } },
+{ "type": "Feature", "properties": { "CODREGION": "34", "NOM_REGION": "IHOROMBE", "CASES": 0.0, "RECOVERED": 0.0, "DECEASED": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 46.14664591053085, -22.520245332254564 ] } }
+]
+}
