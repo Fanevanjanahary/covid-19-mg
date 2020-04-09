@@ -56,9 +56,15 @@
 			      'paint': {
               'circle-radius': [
                 'interpolate', ['linear'], ['zoom'],
-                10, ['*', ['number', ['get', 'CASES']], 3],
-                13, ['*', ['number', ['get', 'CASES']], 1],
-              ],
+                10, ["case",
+                  [">=", ['number', ['get', 'CASES']], 50], 25,
+                  ['+', ['number', ['get', 'CASES']], 2],
+                  ],
+                13, ["case",
+                  [">=", ['number', ['get', 'CASES']], 50], 15,
+                  ['number', ['get', 'CASES']]
+                  ],
+                ],
               'circle-opacity': 0.8,
               'circle-color': '#dc3545'
             }
@@ -81,6 +87,13 @@
             )
         .addTo(map);
      });
+
+    map.on("mouseenter", "covid-19-mg", function () {
+			map.getCanvas().style.cursor = "pointer";
+			});
+    map.on("mouseleave", "covid-19-mg", function () {
+			map.getCanvas().style.cursor = "";
+		});
 </script>
 
 <style>
