@@ -26,9 +26,10 @@
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZmFuZXZhIiwiYSI6ImNrN3g4eHlrazAxM2wzZnAyM2R1c3pkeXcifQ.KNBXjd2pMq3C8gF6QmmcYA';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
+        style: 'mapbox://styles/mapbox/navigation-preview-day-v4',
         center: [46.307, -17.958],
-        zoom: 6
+        zoom: 6,
+        attributionControl: false
     });
 
     map.addControl(new mapboxgl.NavigationControl({
@@ -94,6 +95,14 @@
     map.on("mouseleave", "covid-19-mg", function () {
 			map.getCanvas().style.cursor = "";
 		});
+
+    map.addControl(new mapboxgl.AttributionControl({
+      compact: false,
+      customAttribution: 'By <strong><a href="https://twitter.com/fanevanjanahry" target="_blank">@fanevanjanahry</a></strong>'
+    }), 
+    'bottom-right'
+    )
+
 </script>
 
 <style>
