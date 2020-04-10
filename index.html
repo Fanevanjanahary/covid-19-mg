@@ -59,10 +59,14 @@
                 'interpolate', ['linear'], ['zoom'],
                 10, ["case",
                   [">=", ['number', ['get', 'CASES']], 50], 35,
+		  ["==", ['number', ['get', 'CASES']], 0], 0,
+		  ["<=", ['number', ['get', 'CASES']], 2], ['*', ['number', ['get', 'CASES']], 4],
                   ['*', ['number', ['get', 'CASES']], 2],
                   ],
                 13, ["case",
                   [">=", ['number', ['get', 'CASES']], 50], 15,
+		  ["==", ['number', ['get', 'CASES']], 0], 0,
+		  ["<=", ['number', ['get', 'CASES']], 2], ['*', ['number', ['get', 'CASES']], 3],
                   ['number', ['get', 'CASES']]
                   ],
                 ],
@@ -79,10 +83,10 @@
             '<p><span>CASES:</span>'
               +e.features[0].properties.CASES+
             '</p>'+
-            '<p><span>RECOVERED:</span>'+ 
+            '<p><span>RRCOVERED:</span>'+ 
               +e.features[0].properties.RECOVERED+
             '</p>'+
-            '<p><span>DECEASED:</span>'+ 
+            '<p><span>DEATHS:</span>'+ 
               +e.features[0].properties.DECEASED+
             '</p>'
             )
